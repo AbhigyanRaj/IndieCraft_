@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="indie_craft.png">
+    <title>IndieCraft</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="global.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400&display=swap"
+    />
+
+</head>
+<body>
+    <div class="page" id="page1">
+        
+        <div class="Heading"></div>
+
+        <style>
+            .Heading h2 {
+              overflow: hidden; /* Ensures the content is not revealed until the animation */
+              border-right: .08em solid rgb(255, 255, 255); /* The typewriter cursor */
+              white-space: nowrap; /* Keeps the content on a single line */
+              margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+              
+              animation: 
+                typing 5s steps(40, end) infinite, /* Looping typing animation */
+                blink-caret 1.5s step-end infinite; /* Blinking cursor */
+            }
+            
+            /* The typing effect */
+            @keyframes typing {
+              from { width: 0 }
+              to { width: 100% }
+            }
+            
+            /* The typewriter cursor effect */
+            @keyframes blink-caret {
+              from, to { border-color: transparent }
+              50% { border-color: rgb(216, 156, 36); }
+            }
+          </style>
+          <div class="Heading">
+            <h2><span class="highlight">नमस्कार&nbsp;&nbsp;&nbsp;</span>India</h2>
+          </div>
+          
+
+
+
+
+
+
+          <video src="Handi.mp4" autoplay loop muted></video>
+
+        <img src="indie_craft.png" alt="logo">
+
+        <div class="menu-links">
+            <li><a href="#page1">Home</a></li>
+            
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="collab_1.html">Collabrate </a></li>
+            <li><a href="#page4">Contact</a></li>
+            
+        </div>
+
+        <div class="menu-links2">
+            <li><a href="main.html">Login</a></li>
+        </div>
+    </div>
+
+           
+    
+    
+    <div class="page" id="page4">
+      
+
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Us to Monitize Your Skills </h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="email(2).png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:Abhigyanraj673@gmail.com">Gmail</a> </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/abhigyan-raj-6211502a1/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        
+        </nav>
+        
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const links = document.querySelectorAll('.menu-links a');
+  
+          links.forEach(link => {
+              // Check if the href attribute is not equal to 'collab_1.html' or 'shop.html'
+              if (link.getAttribute('href') !== 'collab_1.html' && link.getAttribute('href') !== 'shop.html') {
+                  link.addEventListener('click', function(e) {
+                      e.preventDefault();
+  
+                      const targetId = this.getAttribute('href');
+                      const targetElement = document.querySelector(targetId);
+  
+                      window.scrollTo({
+                          top: targetElement.offsetTop,
+                          behavior: 'smooth'
+                      });
+                  });
+              }
+          });
+      });
+  </script>
+  
+  
+
+
+    
+    <link rel="stylesheet" href="script.js">
+    
+</body>
+</html>

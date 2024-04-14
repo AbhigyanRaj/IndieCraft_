@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: ease 0.3s;
+}
+*::selection {
+  color: white;
+  background: #000000;
+}
+
+body {
+  background: #000000;
+  overflow: hidden; /* To prevent background image overflow */
+}
+
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('oppp.png'); /* Specify the path to your image */
+  background-size: cover;
+  filter: blur(5px); /* Apply a blur effect to the background image */
+  z-index: -1; /* Ensure the background blur is behind other content */
+}
+
+.container {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 60px;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  color: #1e2c4b;
+  font-size: 14px;
+}
+
+.heading {
+  font-size: 24px;
+  width: 150px;
+}
+
+.para {
+  font-weight: 600;
+}
+
+.fb,
+button {
+  color: white;
+  background: rgb(0, 0, 0);
+  width: 250px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+form .row {
+  display: flex;
+  gap: 10px;
+}
+form input {
+  width: 100%;
+  max-width: 250px;
+  padding: 8px;
+  border: solid 2px #e4edfb;
+  border-radius: 5px;
+  outline: none;
+}
+form .row input {
+  max-width: 120px;
+}
+button {
+  border: none;
+  background: rgb(17, 16, 15);
+  cursor: pointer;
+}
+button:hover,
+a:hover {
+  opacity: 0.9;
+  background: rgb(35, 35, 35);
+}
+
+.foot {
+  font-size: 12px;
+  width: 210px;
+}
